@@ -35,7 +35,7 @@ export default function Movie({ movie }) {
     return (
         <>
             <div className="w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2">
-                <img className='w-full h-auto block' src={`${img_url}${movie.backdrop_path}`} alt={movie.title} />
+                <img className='w-full h-auto block' src={`${img_url}${movie.backdrop_path?movie.backdrop_path:'https://image.tmdb.org/t/p/w500//wybmSmviUXxlBmX44gtpow5Y9TB.jpg'}`} alt={movie.title} />
                 <div className="absolute top-0 left-0 w-full h-full hover:bg-black/80 opacity-0 hover:opacity-100 text-white ">
                     <p className="white-space-normal text-xs md:text-sm font-boldb flex justify-center items-center h-full text-center">{movie.title}</p>
                     <p onClick={saveShow}>

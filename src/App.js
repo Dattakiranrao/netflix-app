@@ -8,7 +8,7 @@ import Account from "./pages/Account";
 import Signup from "./pages/Signup";
 import Protected from "./components/Protected";
 
-export default function App() {
+export default function App() { 
   return (
     <>
       <AuthContextProvider>
